@@ -8,12 +8,16 @@ import { SendFormComponent } from './components/send-form/send-form.component';
 import { WithFormComponent } from './components/with-form/with-form.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { ActionButtonsComponent } from './components/action-buttons/action-buttons.component';
-import { ReactiveFormsModule } from '@angular/forms' 
+import { ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './pages/home/home.component';
+import { SendComponent } from './pages/send/send.component' 
 
 
 
 @NgModule({
-  declarations: [NavComponent, BalanceComponent, InfoTableComponent, SendFormComponent, WithFormComponent, SettingsComponent, ActionButtonsComponent],
+  declarations: [NavComponent, BalanceComponent, InfoTableComponent, SendFormComponent,
+                 WithFormComponent, SettingsComponent, ActionButtonsComponent, HomeComponent,
+                 SendComponent],
   imports: [
     CommonModule,
     UserRoutingModule,

@@ -7,15 +7,19 @@ import { SendFormComponent } from './components/send-form/send-form.component';
 import { WithFormComponent } from './components/with-form/with-form.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { ActionButtonsComponent } from './components/action-buttons/action-buttons.component';
+import { HomeComponent } from './pages/home/home.component';
+import { SendComponent} from './pages/send/send.component'
 
 const rutas: Routes= [
     {path: 'Nav', component: NavComponent},
     {path: 'Balance', component: BalanceComponent},
     {path: 'InfoTable', component: InfoTableComponent},
-    {path: 'Send', component: SendFormComponent },
-    {path: 'Withdrawal', component: WithFormComponent},
+    {path: 'SendForm', component: SendFormComponent },
+    {path: 'WithdrawalForm', component: WithFormComponent},
     {path: 'Settings', component: SettingsComponent},
-    {path: 'Action', component:ActionButtonsComponent},
+    {path: 'Action', component: ActionButtonsComponent},
+    {path: 'Home', component: HomeComponent},
+    {path: 'Send', component: SendComponent},
 
 
 ]
