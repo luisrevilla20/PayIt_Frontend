@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Tarea5Angular": {
+    "PayIt": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Tarea5Angular",
+            "outputPath": "dist/PayIt",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -82,24 +82,24 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Tarea5Angular:build"
+            "browserTarget": "PayIt:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Tarea5Angular:build:production"
+              "browserTarget": "PayIt:build:production"
             },
             "es":{
-              "browserTarget": "Tarea5Angular:build:es"
+              "browserTarget": "PayIt:build:es"
             },
             "pt":{
-              "browserTarget": "Tarea5Angular:build:pt"
+              "browserTarget": "PayIt:build:pt"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Tarea5Angular:build"
+            "browserTarget": "PayIt:build"
           }
         },
         "test": {
@@ -138,16 +138,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Tarea5Angular:serve"
+            "devServerTarget": "PayIt:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Tarea5Angular:serve:production"
+              "devServerTarget": "PayIt:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Tarea5Angular"
+  "defaultProject": "PayIt"
 }
