@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-send',
+  selector: 'app-send-page',
   templateUrl: './send.component.html',
   styleUrls: ['./send.component.scss']
 })

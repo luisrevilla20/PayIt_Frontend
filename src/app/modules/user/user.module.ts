@@ -10,18 +10,24 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { ActionButtonsComponent } from './components/action-buttons/action-buttons.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
-import { SendComponent } from './pages/send/send.component' 
+import { SendComponent } from './pages/send/send.component';
+import { WithdrawalComponent } from './pages/withdrawal/withdrawal.component';
+import { AccountComponent } from './pages/account/account.component' 
 
 
 
 @NgModule({
   declarations: [NavComponent, BalanceComponent, InfoTableComponent, SendFormComponent,
                  WithFormComponent, SettingsComponent, ActionButtonsComponent, HomeComponent,
-                 SendComponent],
+                 SendComponent,
+                 WithdrawalComponent,
+                 AccountComponent],
   imports: [
     CommonModule,
     UserRoutingModule,
     ReactiveFormsModule,
   ]
 })
-export class UserModule { }
+export class UserModule { 
+  
+}

@@ -9,17 +9,22 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { ActionButtonsComponent } from './components/action-buttons/action-buttons.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SendComponent} from './pages/send/send.component'
+import { WithdrawalComponent } from './pages/withdrawal/withdrawal.component';
+import { AccountComponent } from './pages/account/account.component';
 
 const rutas: Routes= [
-    {path: 'Nav', component: NavComponent},
-    {path: 'Balance', component: BalanceComponent},
-    {path: 'InfoTable', component: InfoTableComponent},
-    {path: 'SendForm', component: SendFormComponent },
-    {path: 'WithdrawalForm', component: WithFormComponent},
-    {path: 'Settings', component: SettingsComponent},
-    {path: 'Action', component: ActionButtonsComponent},
+    //{path: 'Nav', component: NavComponent},
+    //{path: 'Balance', component: BalanceComponent},
+    //{path: 'InfoTable', component: InfoTableComponent},
+    //{path: 'SendForm', component: SendFormComponent },
+    //{path: 'WithdrawalForm', component: WithFormComponent},
+    //{path: 'Settings', component: SettingsComponent},
+    //{path: 'Action', component: ActionButtonsComponent},
     {path: 'Home', component: HomeComponent},
     {path: 'Send', component: SendComponent},
+    {path: 'Withdrawal', component: WithdrawalComponent},
+    {path: 'Account', component: AccountComponent}
+
 
 
 ]
