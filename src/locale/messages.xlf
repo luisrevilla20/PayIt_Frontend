@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="92eee6be6de0b11c924e3ab27db30257159c0a7c" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/nav/nav.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2c5ff8fa9c9aaec93f97e37c9a0edcd797194573" datatype="html">
+        <source>Send</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/nav/nav.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/send-form/send-form.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3f7decfcf441dc9e5a5aaac0a8057f23ba7000f0" datatype="html">
+        <source>Withdrawal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/nav/nav.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/with-form/with-form.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="29881a45dafbe5aa05cd9d0441a4c0c2fb06df92" datatype="html">
+        <source>Account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/nav/nav.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e08a77594f3d89311cdf6da5090044270909c194" datatype="html">
+        <source>User</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/nav/nav.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/settings/settings.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="45d7031b3b0e150e952535b90d60854f02f941a9" datatype="html">
+        <source>Balance:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/balance/balance.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="80b5914f4aef92e702c7e6a5970ad7d95dbf3d8d" datatype="html">
+        <source>Tipo de Transacción</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/info-table/info-table.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/admin/components/info-table/info-table.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9209cc7685481b2041f00a8084819a6f54046385" datatype="html">
+        <source>Monto</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/info-table/info-table.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/send-form/send-form.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/with-form/with-form.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/admin/components/info-table/info-table.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="525a896b2ee4b31dd5f7c3a8134511738568a9d4" datatype="html">
+        <source>Destino</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/info-table/info-table.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/admin/components/info-table/info-table.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3c77d46ba1aca3a1d6dfd693c7bfec3e453f8300" datatype="html">
+        <source>Envio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/info-table/info-table.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/admin/components/info-table/info-table.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="abe3601c26a525defe55bae538a938d959905357" datatype="html">
+        <source>Retiro</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/info-table/info-table.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/admin/components/info-table/info-table.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/send-form/send-form.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/send-form/send-form.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/settings/settings.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0060130cb16fdd1940e84862927ae65b72398b21" datatype="html">
+        <source>New Username</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/settings/settings.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/settings/settings.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="024cdb2814b0cb3f4ced148f1a0b9854447cb214" datatype="html">
+        <source>Change</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/settings/settings.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/settings/settings.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/settings/settings.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d20a2fa4a3360caa8825e49a31b5fd3a442ac219" datatype="html">
+        <source>New email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/settings/settings.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/settings/settings.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5edf054f14aa57bc25a28cb7db01956fee53dac8" datatype="html">
+        <source>Change Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/settings/settings.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c7014c6360e94b236286b869c3fe0ea9911c0387" datatype="html">
+        <source>New Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/settings/settings.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/settings/settings.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c1b7e6d75ff4285c7636c67e5ef259629b81725b" datatype="html">
+        <source>Confirm Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/settings/settings.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/settings/settings.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/components/sign-in/sign-in.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bd55ad7c9a775f636f71cdc34039a5c73bb3aa3a" datatype="html">
+        <source>Confirm  Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/settings/settings.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bb694b49d408265c91c62799c2b3a7e3151c824d" datatype="html">
+        <source>Logout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/user/components/action-buttons/action-buttons.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3f7c92baf988f7f75eda83aef88fe6720074dc3b" datatype="html">
+        <source>Please login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/components/log-in/log-in.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="69b6ac577a19acc39fc0c22342092f327fff2529" datatype="html">
+        <source>Email address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/components/log-in/log-in.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/components/sign-in/sign-in.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c32ef07f8803a223a83ed17024b38e8d82292407" datatype="html">
+        <source>Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/components/log-in/log-in.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/components/sign-in/sign-in.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6765b4c916060f6bc42d9bb69e80377dbcb5e4e9" datatype="html">
+        <source>Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/components/log-in/log-in.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a925f43e295771551546eb2635942954fdc3c467" datatype="html">
+        <source>Forget Password?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/components/log-in/log-in.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ba4f24bf9bf3dc4db3d6bc1b8b63339295f0b806" datatype="html">
+        <source>Sign In</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/components/log-in/log-in.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8a1e7b5c711e5c5b49ed8e6f5153ef8143387da1" datatype="html">
+        <source>Please sign in</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/components/sign-in/sign-in.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="08c74dc9762957593b91f6eb5d65efdfc975bf48" datatype="html">
+        <source>Username</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/components/sign-in/sign-in.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="28629af803ab8b5f6e995b17d486e6a1527e2a96" datatype="html">
+        <source>Sign Up</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/components/sign-in/sign-in.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2c4d2bb16ee8227f8fd6fd97459a7dfd2ba4c1e1" datatype="html">
+        <source>Liquidez:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/admin/components/balance/balance.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8b9a5cd92d4a8011c1c36310f10dcebee1650682" datatype="html">
+        <source>Origen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/admin/components/info-table/info-table.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
