@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { BalanceComponent } from './components/balance/balance.component';
 import { InfoTableComponent } from './components/info-table/info-table.component';
 import { NavComponent } from './components/nav/nav.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 const rutas: Routes= [
-    {path: 'Nav', component: NavComponent},
-    {path: 'Balance', component: BalanceComponent},
-    {path: 'Info', component: InfoTableComponent},
+    //{path: 'Nav', component: NavComponent},
+    //{path: 'Balance', component: BalanceComponent},
+    //{path: 'Info', component: InfoTableComponent},
+    {path: 'Home', component: HomeComponent}
 ]
 
 @NgModule({
