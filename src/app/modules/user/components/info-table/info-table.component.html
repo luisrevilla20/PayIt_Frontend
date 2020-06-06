@@ -1,18 +1,15 @@
 <div class="container text-center">
-	<div class="row row-cols-4 rowtitle">
+	<div class="row rowtitle">
 	  <div class="col" i18n>Tipo de Transacción</div>
 	  <div class="col" i18n>Monto</div>
 	  <div class="col" i18n>Origen</div>
 	  <div class="col" i18n>Destino</div>
 	</div>
 	
-	<div class="row row-cols-4 rowcontent" *ngFor= "let transaction of transactions">
+	<div class="row rowcontent" *ngFor= "let transaction of transactions">
 			<div class="col">{{transaction.tipo}}</div>
 		  	<div class="col">{{transaction.monto}}</div>
 		  	<div class="col">{{transaction.userfrom}}</div>
-		  	<div class="col">{{transaction.userto}}</div>
+			<div class="col">{{transaction.userto}}</div>
 	</div>
-
-	
-
-  </div>
+</div>

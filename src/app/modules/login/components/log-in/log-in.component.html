@@ -1,5 +1,5 @@
 <div class="container text-center body1">
-	<form class="form-signin">
+	<form class="form-signin" action="./User/Home"> 
 		<img class="mb-4 bodylogo" src="./../../../../../assets/img/logo.png" alt="Logo">
 		<h1 class="h3 mb-3 font-weight-normal" i18n>Please login</h1>
 		<label for="inputEmail" class="sr-only" i18n>Email address</label>
@@ -13,7 +13,7 @@
 			</div>
 			<div class="col-md-5"></div>
 			<div class="col-md-3">
-				<a class="text-muted" href="sign_up.html" i18n>Sign In</a>
+				<a class="text-muted" (click)="goToPage('/LogIn/Sign')" href="./LogIn/Sign" i18n>Sign In</a>
 			</div>
 		</div>
 	</form>

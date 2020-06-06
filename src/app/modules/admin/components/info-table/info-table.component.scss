@@ -1,19 +1,15 @@
 $sec-color: orange;
 $thi-color: aqua;
 $letra-color: green;
-$letra-tam: 20px;
-$letra-tam-t: 32px;
 
 .rowtitle
 {
     background-color: $sec-color;
     color: $letra-color;
-    font-size: $letra-tam-t;
 }
 
 .rowcontent
 {
     background-color: $thi-color;
     color: $letra-color;
-    font-size: $letra-tam;
 }
