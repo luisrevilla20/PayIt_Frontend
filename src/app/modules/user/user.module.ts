@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule} from '@angular/common/http'
 import { UserRoutingModule } from './user-routing.module';
 import { NavComponent } from './components/nav/nav.component';
 import { BalanceComponent } from './components/balance/balance.component';
@@ -13,6 +14,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { SendComponent } from './pages/send/send.component';
 import { WithdrawalComponent } from './pages/withdrawal/withdrawal.component';
 import { AccountComponent } from './pages/account/account.component' 
+import { from } from 'rxjs';
 
 
 
@@ -26,6 +28,7 @@ import { AccountComponent } from './pages/account/account.component'
     CommonModule,
     UserRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ]
 })
 export class UserModule { 

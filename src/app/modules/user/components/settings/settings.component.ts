@@ -29,7 +29,7 @@ export class SettingsComponent implements OnInit {
 	}
   
 	getUser(){
-	  this.userService.getMainUser().subscribe(user =>{
+	  this.userService.getUser().subscribe(user =>{
 		this.user = user;
 	  });
     }
