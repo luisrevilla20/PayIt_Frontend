@@ -9,7 +9,7 @@ import { Router} from '@angular/router';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-	user: User;
+	user: User = {};
 
   constructor(public userService:UserService, private router: Router) { }
 
@@ -19,7 +19,7 @@ export class NavComponent implements OnInit {
 
   getUser(){
     this.userService.getUser().subscribe(user =>{
-      this.user = user;
+      this.user.username = user.user_name;
 	});
   }
   
