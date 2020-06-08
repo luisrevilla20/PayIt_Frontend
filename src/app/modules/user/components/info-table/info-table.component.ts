@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Transaction } from '../../models/transactions/transaction';
+import { AuthService } from 'src/app/services/auth.service';
 
 
 @Component({
@@ -10,8 +11,11 @@ import { Transaction } from '../../models/transactions/transaction';
 export class InfoTableComponent implements OnInit {
 
   transactions: Transaction[];
-  constructor() { }
+  constructor(
+    public auth: AuthService
+  ) { }
 
   ngOnInit(): void {
+    this.transactions = this.auth.user.transactions;
   }
 }

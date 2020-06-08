@@ -13,10 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
 import { SendComponent } from './pages/send/send.component';
 import { WithdrawalComponent } from './pages/withdrawal/withdrawal.component';
-import { AccountComponent } from './pages/account/account.component' 
-import { from } from 'rxjs';
-
-
+import { AccountComponent } from './pages/account/account.component';
 
 @NgModule({
   declarations: [NavComponent, BalanceComponent, InfoTableComponent, SendFormComponent,
@@ -31,6 +28,6 @@ import { from } from 'rxjs';
     HttpClientModule,
   ]
 })
-export class UserModule { 
-  
+export class UserModule {
+
 }
