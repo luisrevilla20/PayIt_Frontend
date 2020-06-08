@@ -5,11 +5,11 @@
 	  <div class="col" i18n>Origen</div>
 	  <div class="col" i18n>Destino</div>
 	</div>
-	
+
 	<div class="row rowcontent" *ngFor= "let transaction of transactions">
-			<div class="col">{{transaction.tipo}}</div>
-		  	<div class="col">{{transaction.monto}}</div>
-		  	<div class="col">{{transaction.userfrom}}</div>
-			<div class="col">{{transaction.userto}}</div>
+			<div class="col">{{transaction.type}}</div>
+		  	<div class="col">{{transaction.amount}}</div>
+		  	<div class="col">{{transaction.origin}}</div>
+			<div class="col">{{transaction.destination}}</div>
 	</div>
 </div>

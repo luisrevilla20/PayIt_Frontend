@@ -1,21 +1,25 @@
 <div class="container text-center">
-	<form  class="form-signin" action="">
+	<form  class="form-signin">
 		<img class="mb-4 bodylogo" src="./../../../../../assets/img/logo.png" alt="Logo">
 		<h1 class="h3 mb-3 font-weight-normal" i18n>Please sign in</h1>
-		
-		<label for="inputEmail" class="sr-only" i18n>Username</label>
-		<input type="text" #user id="user" name="user" class="form-control" placeholder="Username" required autofocus>
-		
+
+		<label for="user" class="sr-only" i18n>Username</label>
+    <input type="text" id="user" name="user" class="form-control" placeholder="Username" required autofocus
+      [(ngModel)]="name" [ngModelOptions]="{ standalone: true }">
+
 		<label for="inputEmail" class="sr-only" i18n>Email address</label>
-		<input type="email" #email id="inputEmail" class="form-control" placeholder="Email address" required>
-	
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required
+      [(ngModel)]="mail" [ngModelOptions]="{ standalone: true }">
+
 		<label for="inputPassword1" class="sr-only" i18n>Password</label>
-		<input type="password" #pass id="inputPassword1" class="form-control" placeholder="Password" required>
+    <input type="password" id="inputPassword1" class="form-control" placeholder="Password" required
+      [(ngModel)]="pass" [ngModelOptions]="{ standalone: true }">
 
 		<label for="inputPassword2" class="sr-only" i18n>Confirm Password</label>
-		<input type="password" #pass2 id="inputPassword2" class="form-control" placeholder="Confirm Password" required>
+    <input type="password" id="inputPassword2" class="form-control" placeholder="Confirm Password" required
+      [(ngModel)]="confirm" [ngModelOptions]="{ standalone: true }">
 
-		<button class="btn btn-lg btn-primary btn-block" type="submit"  (click)="createUser(user.value, email.value, pass.value , pass2.value )"  i18n>Sign Up</button>
+		<button class="btn btn-lg btn-primary btn-block" type="button"  (click)="createUser()"  i18n>Sign Up</button>
 	</form>
 </div>
 

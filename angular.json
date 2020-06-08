@@ -88,10 +88,10 @@
             "production": {
               "browserTarget": "PayIt:build:production"
             },
-            "es":{
+            "es": {
               "browserTarget": "PayIt:build:es"
             },
-            "pt":{
+            "pt": {
               "browserTarget": "PayIt:build:pt"
             }
           }
@@ -149,5 +149,8 @@
       }
     }
   },
-  "defaultProject": "PayIt"
+  "defaultProject": "PayIt",
+  "cli": {
+    "analytics": false
+  }
 }
