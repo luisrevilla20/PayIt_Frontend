@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Transaction } from '../../models/transactions/transaction';
-import { TransactionService } from '../../services/transactions/transaction.service';
+import { UserService } from '../../services/user/user.service'
 
 @Component({
   selector: 'app-info-table',
@@ -10,16 +10,16 @@ import { TransactionService } from '../../services/transactions/transaction.serv
 export class InfoTableComponent implements OnInit {
 
   transactions: Transaction[];
-  constructor(public transactionService: TransactionService) { }
+  constructor(public userService: UserService) { }
 
   ngOnInit(): void {
-    this.getTransactions();
+    //this.getTransactions();
   }
-
+/*
   getTransactions(){
-    this.transactionService.getTransactions().subscribe(transactions =>{
+    this.userService.getTransactions().subscribe(transactions =>{
       this.transactions = transactions;
     });
-  }
+  }*/
 
 }
