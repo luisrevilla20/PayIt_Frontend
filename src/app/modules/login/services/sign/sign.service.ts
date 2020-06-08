@@ -22,24 +22,22 @@ export class SignService {
   user: User;
 
   createToken(): Observable <any>{
-    const body = new HttpParams()
-    .set('grant_type', 'client_credentials')
-    .set('scope', 'openid')
-    .set('client_id', 'shopper-manager-br')
-    .set('client_secret', '3c9c8b7e-1318-4e66-a6bd-2549a846a3dc')
 
-  return this.http.post('https://auth.rappipay.com/auth/realms/dev/protocol/openid-connect/token',
-    body.toString(),
-    {
-      headers: new HttpHeaders()
-        .set('Content-Type', 'application/x-www-form-urlencoded')
-    }
-    );
-  }
+	return this.http.post(this.endpoint + 'auth', {}, {
+		headers: new HttpHeaders()
+		  .set('api_key', 'payitMobile')
+		  .set('api_secret', 'b60f1f850675496f9fff95b95c28cecd')
+	  });
+	}
 
-  createUser(){
-      
-  }
+  createUser(user: User, username: any, email : any, password : any): Observable <any>{
+	  const data = {username, email, password}
+
+	return this.http.post(this.endpoint + 'user', data, {
+		headers: new HttpHeaders()
+		  .set('authorization', user.session)
+	  });
+	}
 
   private extractData(res: Response) {
     let body = res;

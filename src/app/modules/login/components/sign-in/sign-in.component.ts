@@ -17,10 +17,13 @@ export class SignInComponent implements OnInit {
   user: User = {};
 
   createToken(){
-    this.signService.createToken().subscribe(user =>{});
+	this.signService.createToken().subscribe(user =>{this.user.session = user.token});
+	console.log(this.user);
   }
 
   createUser(){
-    this.signService.createUser();
+	this.createToken();
+	this.signService.createUser(this.user, this.user.username, this.user.email, this.user.password);
+	console.log(this.user);
   }
 }

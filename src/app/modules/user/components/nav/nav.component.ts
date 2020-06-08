@@ -18,9 +18,9 @@ export class NavComponent implements OnInit {
   }
 
   getUser(){
-    this.userService.getUser().subscribe(user =>{
-      this.user.username = user.user_name;
-	});
+    //this.userService.getUser().subscribe(user =>{
+      //this.user.username = user.user_name;
+	//});
   }
   
    
