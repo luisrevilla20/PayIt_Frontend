@@ -35,6 +35,7 @@ export class LogInComponent implements OnInit {
         password: this.pass
       }, this.user).subscribe(data => {
         this.auth.user = data;
+        localStorage.setItem('tokenAuth', user.token);
         localStorage.setItem('user',JSON.stringify(data));
         this.goToPage('/User/Home');
       });
