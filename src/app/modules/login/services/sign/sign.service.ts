@@ -23,18 +23,21 @@ export class SignService {
 
   createToken(): Observable <any>{
 
-  return this.http.post(this.endpoint + 'auth',
-    {
-      headers: new HttpHeaders()
-        .set('api_key', 'payitMobile')
-        .set('api_secret', 'b60f1f850675496f9fff95b95c28cecd')
-    }
-    );
-  }
+	return this.http.post(this.endpoint + 'auth', {}, {
+		headers: new HttpHeaders()
+		  .set('api_key', 'payitMobile')
+		  .set('api_secret', 'b60f1f850675496f9fff95b95c28cecd')
+	  });
+	}
 
-  createUser(): Observable <any>{
-    return 
-  }
+  createUser(user: User, username: any, email : any, password : any): Observable <any>{
+	  const data = {username, email, password}
+
+	return this.http.post(this.endpoint + 'user', data, {
+		headers: new HttpHeaders()
+		  .set('authorization', user.session)
+	  });
+	}
 
   private extractData(res: Response) {
     let body = res;
