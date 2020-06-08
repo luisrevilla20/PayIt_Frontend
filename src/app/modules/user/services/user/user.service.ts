@@ -32,6 +32,24 @@ export class UserService {
     //return of (this.user);
   }
 
+  getTransactions(){
+    //info-table component
+    return
+  }
+
+  createTransactions(){
+    //send-form component
+    //with-form component
+    return
+  }
+
+  updateUser(){
+    //settings component
+    return
+  }
+
+
+
   private extractData(res: Response) {
     let body = res;
     console.log(res)

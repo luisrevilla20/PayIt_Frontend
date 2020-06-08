@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Observable, of} from 'rxjs';
-import { User } from '../../../modules/user/models/user/user';
+import { User } from '../../../user/models/user/user';
 import { HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import { map, catchError, tap} from 'rxjs/operators'
 
@@ -35,6 +35,10 @@ export class SignService {
         .set('Content-Type', 'application/x-www-form-urlencoded')
     }
     );
+  }
+
+  createUser(){
+      
   }
 
   private extractData(res: Response) {

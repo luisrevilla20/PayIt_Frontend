@@ -15,10 +15,12 @@ export class BalanceComponent implements OnInit {
 	ngOnInit(): void {
 		this.getUser();
 	}
-  
+	
+	
+
 	getUser(){
 	  this.userService.getUser().subscribe(user =>{
-		this.user = user;
+		this.user.balance = user;
 	  });
 	  }
 
