@@ -20,7 +20,6 @@ export class NavComponent implements OnInit {
 
   ngOnInit(): void {
     this.user = this.auth.user.user;
-    console.log(this.user);
   }
 
   goToPage(pageName: string):void {
