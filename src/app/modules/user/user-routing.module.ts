@@ -13,20 +13,10 @@ import { WithdrawalComponent } from './pages/withdrawal/withdrawal.component';
 import { AccountComponent } from './pages/account/account.component';
 
 const rutas: Routes= [
-    //{path: 'Nav', component: NavComponent},
-    //{path: 'Balance', component: BalanceComponent},
-    //{path: 'InfoTable', component: InfoTableComponent},
-    //{path: 'SendForm', component: SendFormComponent },
-    //{path: 'WithdrawalForm', component: WithFormComponent},
-    //{path: 'Settings', component: SettingsComponent},
-    //{path: 'Action', component: ActionButtonsComponent},
     {path: 'Home', component: HomeComponent},
     {path: 'Send', component: SendComponent},
     {path: 'Withdrawal', component: WithdrawalComponent},
     {path: 'Account', component: AccountComponent}
-
-
-
 ]
 
 @NgModule({
@@ -34,5 +24,5 @@ const rutas: Routes= [
     exports: [RouterModule],
 })
 export class UserRoutingModule{
-    
+
 }

@@ -15,5 +15,5 @@ const rutas: Routes= [
     exports: [RouterModule],
 })
 export class LogInRoutingModule{
-    
+
 }

@@ -15,6 +15,7 @@ import {registerLocaleData} from '@angular/common';
 import localesMX from '@angular/common/locales/es-MX';
 import localeBR from '@angular/common/locales/pt';
 import localeUS from '@angular/common/locales/en';
+import { AuthService } from './services/auth.service';
 
 registerLocaleData(localesMX, 'es-MX');
 registerLocaleData(localeBR, 'pt');
@@ -45,7 +46,9 @@ registerLocaleData(localeUS, 'en');
     AdminModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

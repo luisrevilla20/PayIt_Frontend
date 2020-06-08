@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { User } from '../../models/user/user';
 import { UserService } from '../../services/user/user.service';
 import { FormGroup, FormControl, Validators} from '@angular/forms'
+import { AuthService } from 'src/app/services/auth.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-settings',
@@ -10,31 +12,51 @@ import { FormGroup, FormControl, Validators} from '@angular/forms'
 })
 export class SettingsComponent implements OnInit {
   user: User;
-  
-  username = new FormGroup(
-    {username: new FormControl('', Validators.required)
+
+  username = new FormGroup({
+    user_name: new FormControl('', Validators.required)
   });
-  email = new FormGroup(
-    {email: new FormControl('', [Validators.required, Validators.email])
+  email = new FormGroup({
+    email: new FormControl('', [Validators.required, Validators.email])
   });
   password = new FormGroup({
-    password1: new FormControl('', Validators.required),
+    password: new FormControl('', Validators.required),
     password2: new FormControl('', Validators.required)
   });
+  token: string;
 
-	constructor(public userService:UserService) { }
-  
+  constructor(
+    public userService:UserService,
+    public auth: AuthService,
+    private http: HttpClient
+  ) { }
+
 	ngOnInit(): void {
-		this.getUser();
+    this.token = localStorage.getItem('tokenAuth');
+    this.user = this.auth.user.user;
 	}
-  
-	getUser(){
-	  this.userService.getUser().subscribe(user =>{
-		this.user = user;
-	  });
-    }
-    
-  changeUsername(newname: string){
-    this.username.setValue([this.user.username = newname])
+
+  changeUsername() {
+    this.updateUser(this.username.value);
+  }
+
+  changeMail() {
+    this.updateUser(this.email.value);
+  }
+
+  changePass() {
+    this.updateUser(this.password.value);
+  }
+
+  updateUser(body) {
+    this.http.patch<any>(`https://a37135c55a90.ngrok.io/user/${(this.auth.user.user as any).id}`, body,{
+      headers: new HttpHeaders()
+          .set('Authorization', `bearer ${this.token}`)
+    }).subscribe(data => {
+      this.user = data;
+      this.auth.user.user = data;
+      localStorage.setItem('user', JSON.stringify(this.auth.user));
+      alert('Se actualizo el perfil.');
+    });
   }
 }

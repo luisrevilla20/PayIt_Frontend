@@ -39,20 +39,21 @@ export class SignService {
 		  .set('authorization', user.session)
 	  });
   } */
-  
-  createUser(user: User, username: any, email : any, password : any): Observable <any>{
-    console.log("gggggggggggggggggggggggggg", email)
-    
-	  return this.http.post(this.endpoint + 'user', username, {
+
+  createUser(data: any, session: User): Observable <any>{
+    console.log("gggggggggggggggggggggggggg", data);
+
+    return this.http.post(`${this.endpoint}user`, data, {
       headers: new HttpHeaders()
-        .set('authorization', user.session)
-      });
-	}
+        .set('authorization', `bearer ${session.session}`)
+      }
+    );
+  }
 
   private extractData(res: Response) {
     let body = res;
     console.log(res)
-    return body || {}; 
+    return body || {};
   }
 
   constructor(private http: HttpClient) { }
