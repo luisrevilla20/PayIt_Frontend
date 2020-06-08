@@ -30,6 +30,7 @@ export class SignService {
 	  });
 	}
 
+  /*
   createUser(user: User, username: any, email : any, password : any): Observable <any>{
 	  const data = {username, email, password}
 
@@ -37,6 +38,15 @@ export class SignService {
 		headers: new HttpHeaders()
 		  .set('authorization', user.session)
 	  });
+  } */
+  
+  createUser(user: User, username: any, email : any, password : any): Observable <any>{
+    console.log("gggggggggggggggggggggggggg", email)
+    
+	  return this.http.post(this.endpoint + 'user', username, {
+      headers: new HttpHeaders()
+        .set('authorization', user.session)
+      });
 	}
 
   private extractData(res: Response) {
