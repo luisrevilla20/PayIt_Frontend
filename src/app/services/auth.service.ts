@@ -16,7 +16,7 @@ export class AuthService {
   getUser() {
     const token = localStorage.getItem('tokenAuth');
     const userL = JSON.parse(localStorage.getItem('user'));
-    return this.http.get<any>(`https://a37135c55a90.ngrok.io/user/${userL.user.id}`,{
+    return this.http.get<any>(`https://b697e71a90b9.ngrok.io/user/${userL.user.id}`,{
       headers: new HttpHeaders()
           .set('Authorization', `bearer ${token}`)
     }).subscribe(data => {
